@@ -50,7 +50,7 @@ to load the model
 <li>Modify pred.py and run</li>
    
   ```
-  ./pred.py.
+  ./pred.py
   ```
 <li>Predict file will be generated</li>
 </ol>
@@ -59,7 +59,7 @@ to load the model
 <p><strong>########## Training yourself models ##########</strong></p>
 <ol>
 <li>1.	make sure you have download the pre-trained model and dataset file, You can also generate your own dataset file form Filtered feature file and transfer integrals file by run</li>
-    ```
+  ```
   X =open('A321exx0_edit1.txt','r')
   X = X.read()
   X = X.split()
@@ -71,12 +71,12 @@ to load the model
   Y = np.array(Y)
   Y = Y.astype(float)
   np.savez('dataset.npz',X,Y)
-    ```
+  ```
 <li>2.	Modify the python interpreter path to your own dataset path and pre-trained model path </li>
 <li>Run </li>
   
   ```
-  ./finetune.py.
+  ./finetune.py
   ```
   The performance of the model will be printed to the screen during training.
 <li>Model file mlplossyGPB0&90.pth will be generated</li>
