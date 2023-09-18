@@ -57,8 +57,9 @@ to load the model
 
 
 <p><strong>########## Training yourself models ##########</strong></p>
-make sure you have download the pre-trained model and dataset file, You can also generate your own dataset file form Filtered feature file and transfer integrals file by run
-
+<ol>
+<li>make sure you have download the pre-trained model and dataset file, You can also generate your own dataset file form Filtered feature file and transfer integrals file by run</li>
+</ol>
   ```
   X =open('A321exx0_edit1.txt','r')
   X = X.read()
