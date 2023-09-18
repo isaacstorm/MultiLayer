@@ -60,17 +60,17 @@ to load the model
 <ol>
 <li>1.	make sure you have download the pre-trained model and dataset file, You can also generate your own dataset file form Filtered feature file and transfer integrals file by run</li>
   ```
-   X =open('A321exx0_edit1.txt','r')
-   X = X.read()
-   X = X.split()
-   X = np.array(X).reshape((-1,3200))
-   X = X.astype(float)
-   Y =open('jefflod0.txt','r') 
-   Y = Y.read()
-   Y = Y.split()
-   Y = np.array(Y)
-   Y = Y.astype(float)
-   np.savez('dataset.npz',X,Y)
+  X =open('A321exx0_edit1.txt','r')
+  X = X.read()
+  X = X.split()
+  X = np.array(X).reshape((-1,3200))
+  X = X.astype(float)
+  Y =open('jefflod0.txt','r') 
+  Y = Y.read()
+  Y = Y.split()
+  Y = np.array(Y)
+  Y = Y.astype(float)
+  np.savez('dataset.npz',X,Y)
   ```
 <li>2.	Modify the python interpreter path to your own dataset path and pre-trained model path </li>
 <li>Run </li>
