@@ -41,12 +41,12 @@ cm = np.array(cm).reshape((-1,3200))
 cm = cm.astype(float)
 
 
-x_mean =open('edit1mean','r')
+x_mean =open('0hgpgmeanedit1','r')
 x_mean = x_mean.read()
 x_mean = x_mean.split()
 x_mean = np.array(x_mean).reshape(-1,3200)
 x_mean = x_mean.astype(float)
-x_std =open('edit1std','r')
+x_std =open('0hgpgstdedit1','r')
 x_std = x_std.read()
 x_std = x_std.split()
 x_std = np.array(x_std).reshape(-1,3200)
@@ -74,7 +74,7 @@ class MultipleLayerRegressor(nn.Module):
        x = self.out(x)
        return x
 
-mlp=torch.load('mlp.pth')
+mlp=torch.load('mlplossyGPB0&90100.pth')
 np.savetxt('predDIY',mlp(var(torch.from_numpy(x))).detach().numpy(), fmt='%s',delimiter=' ' )
 
 
