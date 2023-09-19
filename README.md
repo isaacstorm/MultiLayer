@@ -22,7 +22,7 @@
 <li>finetune.py #Neural network training program for fine-tuning The fine tuned model will be saved as mlplossyGPB0&90.pth, which can be called by the torch.load </li>
 
 <p><strong>########## Download Model and Dataset  ##########</strong></p>
-The dataset, pre-trained model mlp.pth and fine-tuned model mlplossyGPB0&90.pth can be downloaded at , and use
+The dataset, pre-trained model mlp.pth and fine-tuned model mlplossyGPB0&90.pth can be downloaded at https://mega.nz/folder/emZHGISL#ibR_KAmxVn2ngmwqzUXEaQ, and use
 
   ```
   torch.load(PATH)
